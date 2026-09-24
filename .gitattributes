@@ -1,0 +1,8 @@
+# Скрипты выполняются в Linux-контейнере Jenkins.
+# Без принудительного LF Windows допишет CR и sh выдаст "\r: not found".
+* text=auto eol=lf
+*.sh text eol=lf
+Jenkinsfile text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf

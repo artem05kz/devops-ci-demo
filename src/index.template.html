@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevOps CI Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="card">
+    <h1>DevOps CI Demo</h1>
+    <p class="lead">Демонстрационное приложение для конвейера непрерывной интеграции Jenkins.</p>
+
+    <dl class="meta">
+        <dt>Версия</dt>        <dd id="version">{{VERSION}}</dd>
+        <dt>Номер сборки</dt>  <dd id="build">{{BUILD_NUMBER}}</dd>
+        <dt>Дата сборки</dt>   <dd id="date">{{BUILD_DATE}}</dd>
+        <dt>Окружение</dt>     <dd id="env">{{ENVIRONMENT}}</dd>
+    </dl>
+
+    <p class="status">Сборка собрана автоматически конвейером Jenkins.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
